@@ -18,28 +18,32 @@ def index():
 	homepage += "<a href=/mis>MIS相關工作介紹</a><br>"
 
 	return homepage
-@app.route("/welcome")
-
-def welcome():
-	
-	return render_template("welcome.html")
 
 @app.route("/about")
 
 def about():
 	return render_template("aboutme.html")
 
-@app.route("/mis")
-
-def course():
-	return render_template("mis.html")
-	
 @app.route("/today")
 
 def today():
 
 	return render_template("today.html")
+@app.route("/mis")
 
+def course():
+	return render_template("mis.html")
+
+@app.route("/welcome")
+
+def welcome():
+	
+	return render_template("welcome.html")
+		
+@app.route("/mis")
+
+def course():
+	return render_template("mis.html")
 
 
 
